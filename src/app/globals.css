@@ -2,109 +2,90 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-    .text-balance {
-        text-wrap: balance;
-    }
-}
-
 @layer base {
     :root {
-        --primary: 256, 25%, 45%;
-        --surface-tint: 256, 25%, 45%;
+        --primary: 121, 100%, 22%;
         --on-primary: 0, 0%, 100%;
-        --primary-container: 259, 100%, 93%;
-        --on-primary-container: 256, 63%, 17%;
-        --primary-fixed: 259, 100%, 93%;
-        --on-primary-fixed: 256, 63%, 17%;
-        --primary-fixed-dim: 256, 97%, 87%;
-        --on-primary-fixed-variant: 255, 31%, 35%;
-        --inverse-primary: 256, 97%, 87%;
-
-        --secondary: 256, 11%, 40%;
+        --primary-container: 112, 100%, 69%;
+        --on-primary-container: 120, 100%, 7%;
+        --secondary: 101, 13%, 35%;
         --on-secondary: 0, 0%, 100%;
-        --secondary-container: 261, 65%, 92%;
-        --on-secondary-container: 253, 26%, 13%;
-        --secondary-fixed: 261, 65%, 92%;
-        --on-secondary-fixed: 253, 26%, 13%;
-        --secondary-fixed-dim: 259, 26%, 81%;
-        --on-secondary-fixed-variant: 255, 13%, 31%;
-
-        --tertiary: 339, 21%, 41%;
+        --secondary-container: 98, 37%, 86%;
+        --on-secondary-container: 106, 38%, 9%;
+        --tertiary: 185, 30%, 32%;
         --on-tertiary: 0, 0%, 100%;
-        --tertiary-container: 344, 100%, 93%;
-        --on-tertiary-container: 335, 51%, 13%;
-        --tertiary-fixed: 344, 100%, 93%;
-        --on-tertiary-fixed: 335, 51%, 13%;
-        --tertiary-fixed-dim: 341, 63%, 83%;
-        --on-tertiary-fixed-variant: 339, 25%, 31%;
-
+        --tertiary-container: 184, 60%, 84%;
+        --on-tertiary-container: 184, 100%, 7%;
         --error: 0, 75%, 42%;
         --on-error: 0, 0%, 100%;
         --error-container: 6, 100%, 92%;
         --on-error-container: 358, 100%, 13%;
-
-        --background: 285, 100%, 98%;
-        --on-background: 252, 8%, 12%;
-
-        --surface: 285, 100%, 98%;
-        --on-surface: 252, 8%, 12%;
-        --surface-variant: 270, 24%, 90%;
-        --on-surface-variant: 260, 6%, 29%;
-        --inverse-surface: 270, 6%, 20%;
-        --inverse-on-surface: 285, 33%, 95%;
-        --surface-dim: 285, 11%, 86%;
-        --surface-bright: 285, 100%, 98%;
-        --surface-container-lowest: 0, 0%, 100%;
-        --surface-container-low: 278, 44%, 96%;
-        --surface-container: 285, 27%, 94%;
-        --surface-container-high: 285, 19%, 92%;
-        --surface-container-highest: 278, 15%, 90%;
-
-        --outline: 264, 4%, 48%;
-        --outline-variant: 273, 10%, 79%;
-
+        --background: 69, 64%, 98%;
+        --on-background: 90, 8%, 10%;
+        --surface: 69, 41%, 97%;
+        --on-surface: 90, 8%, 10%;
+        --surface-variant: 83, 19%, 87%;
+        --on-surface-variant: 93, 7%, 26%;
+        --outline: 93, 5%, 45%;
+        --outline-variant: 85, 10%, 76%;
         --shadow: 0, 0%, 0%;
         --scrim: 0, 0%, 0%;
+        --inverse-surface: 90, 4%, 18%;
+        --inverse-on-surface: 60, 18%, 93%;
+        --inverse-primary: 123, 100%, 45%;
+        --surface-dim: 60, 7%, 84%;
+        --surface-bright: 69, 41%, 97%;
+        --surface-container-lowest: 0, 0%, 100%;
+        --surface-container-low: 60, 24%, 94%;
+        --surface-container: 60, 15%, 92%;
+        --surface-container-high: 69, 14%, 90%;
+        --surface-container-highest: 69, 11%, 88%;
     }
     .dark {
-        --background: 0 0% 3.9%;
-        --foreground: 0 0% 98%;
-
-        --card: 0 0% 3.9%;
-        --card-foreground: 0 0% 98%;
-        --popover: 0 0% 3.9%;
-        --popover-foreground: 0 0% 98%;
-        --primary: 0 0% 98%;
-        --primary-foreground: 0 0% 9%;
-        --secondary: 0 0% 14.9%;
-        --secondary-foreground: 0 0% 98%;
-        --muted: 0 0% 14.9%;
-        --muted-foreground: 0 0% 63.9%;
-        --accent: 0 0% 14.9%;
-        --accent-foreground: 0 0% 98%;
-        --destructive: 0 62.8% 30.6%;
-        --destructive-foreground: 0 0% 98%;
-        --border: 0 0% 14.9%;
-        --input: 0 0% 14.9%;
-        --ring: 0 0% 83.1%;
-        --chart-1: 220 70% 50%;
-        --chart-2: 160 60% 45%;
-        --chart-3: 30 80% 55%;
-        --chart-4: 280 65% 60%;
-        --chart-5: 340 75% 55%;
+        --primary: 123, 100%, 45%;
+        --on-primary: 120, 100%, 11%;
+        --primary-container: 121, 100%, 16%;
+        --on-primary-container: 112, 100%, 69%;
+        --secondary: 98, 19%, 75%;
+        --on-secondary: 107, 21%, 17%;
+        --secondary-container: 105, 15%, 25%;
+        --on-secondary-container: 98, 37%, 86%;
+        --tertiary: 184, 36%, 73%;
+        --on-tertiary: 183, 100%, 11%;
+        --tertiary-container: 184, 45%, 22%;
+        --on-tertiary-container: 184, 60%, 84%;
+        --error: 6, 100%, 84%;
+        --on-error: 357, 100%, 21%;
+        --error-container: 356, 100%, 29%;
+        --on-error-container: 6, 100%, 84%;
+        --background: 90, 8%, 10%;
+        --on-background: 69, 11%, 88%;
+        --surface: 90, 11%, 7%;
+        --on-surface: 69, 11%, 88%;
+        --surface-variant: 93, 7%, 26%;
+        --on-surface-variant: 85, 10%, 76%;
+        --outline: 90, 5%, 55%;
+        --outline-variant: 93, 7%, 26%;
+        --shadow: 0, 0%, 0%;
+        --scrim: 0, 0%, 0%;
+        --inverse-surface: 69, 11%, 88%;
+        --inverse-on-surface: 90, 4%, 18%;
+        --inverse-primary: 121, 100%, 22%;
+        --surface-dim: 90, 11%, 7%;
+        --surface-bright: 84, 5%, 22%;
+        --surface-container-lowest: 90, 15%, 5%;
+        --surface-container-low: 90, 8%, 10%;
+        --surface-container: 90, 7%, 12%;
+        --surface-container-high: 105, 5%, 16%;
+        --surface-container-highest: 90, 4%, 20%;
     }
 }
 
 @layer base {
     * {
-        @apply border-outline;
+        @apply border-border;
     }
     body {
-        @apply bg-background text-on-background;
+        @apply bg-background text-foreground;
     }
 }
